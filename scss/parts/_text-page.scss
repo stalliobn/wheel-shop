@@ -1,0 +1,35 @@
+.text-page {
+  ul,
+  ol {
+    margin-bottom: 10px;
+    list-style-position: outside;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.72em;
+    color: #303030;
+  }
+  ol {
+    list-style: decimal;
+  }
+  ul {
+    list-style: square;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.72em;
+    color: #303030;
+    margin-bottom: 10px;
+  }
+  a {
+    color: #23527c;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h1,
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

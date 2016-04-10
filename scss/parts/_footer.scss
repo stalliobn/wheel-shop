@@ -1,0 +1,171 @@
+footer {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #303030;
+  font-size: 14px;
+  line-height: 18px;
+}
+.footer_left {
+  float: left;
+  width: 28.04054054054054%;
+  padding-right: 40px;
+  border-right: 1px solid #eaeaea;
+  @include breakpoint((to: 992px)) {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  @include breakpoint((to: 768px)) {
+    width: 100%;
+    float: none;
+    padding: 0;
+    border-right: 0;
+  }
+}
+.footer_left, .footer_middle, .footer_right {
+  min-height: 50px;
+}
+.footer_title {
+  margin-bottom: 26px;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #303030;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.footer-phone {
+  color: black;
+  font-size: 18px;
+  letter-spacing: .05em;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.footer-email {
+  color: #23527c;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.footer_middle {
+  float: left;
+  width: 43.07432432432432%;
+  padding: 0 5.067567567567568%;
+  @include breakpoint((to: 992px)) {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  @include breakpoint((to: 768px)) {
+    width: 100%;
+    float: none;
+    padding: 0;
+    img {
+      margin: auto;
+    }
+  }
+}
+.ym_link {
+  display: block;
+  img {
+    display: block;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
+.footer_right {
+  float: right;
+  width: 28.71621621621622%;
+  padding-left: 40px;
+  border-left: 1px solid #eaeaea;
+  @include breakpoint((to: 992px)) {
+    width: 100%;
+    float: none;
+    clear: both;
+    border-left: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+.social-btns {
+  margin-bottom: 22px;
+  font-size: 0;
+}
+.social-btns a {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 4.72972972972973%;
+}
+
+.social-btns a span {
+  background: url(../images/spritesheet.png) no-repeat;
+  height: 32px;
+  width: 32px;
+  display: block;
+  transition: .5s;
+}
+.social-btns .social-btns__g {
+  background-position: 0 -283px;
+  background-color: white;
+  &:hover {
+    background-position: -34px -283px;
+  }
+}
+.social-btns .social-btns__vk {
+  background-position: 0 -215px;
+  &:hover {
+    background-position: -34px -215px;
+  }
+}
+.social-btns .social-btns__fb {
+  background-position: 0 -147px;
+  &:hover {
+    background-position: -34px -147px;
+  }
+}
+.social-btns .social-btns__ok {
+  background-position: 0 -249px;
+  &:hover {
+    background-position: -34px -249px;
+  }
+}
+.social-btns .social-btns__in {
+  background-position: 0 -181px;
+  &:hover {
+    background-position: -34px -181px;
+  }
+}
+.social-btns .social-btns__tw {
+  background-position: 0 -113px;
+  &:hover {
+    background-position: -34px -113px;
+  }
+}
+.pay-card {
+  height: 38px;
+}
+.pay-card span {
+  background: url(../images/spritesheet.png) no-repeat;
+  margin-right: 20px;
+  display: inline-block;
+  width: 64px;
+  vertical-align: middle;
+}
+.pay-card .pay-card__mc {
+  background-position: 0 -339px;
+  height: 38px;
+  &:hover {
+    background-position-x: -66px;
+  }
+}
+.pay-card .pay-card__visa {
+  background-position: 0 -317px;
+  height: 20px;
+  &:hover {
+    background-position-x: -66px;
+  }
+}

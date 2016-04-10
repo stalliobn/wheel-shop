@@ -1,0 +1,341 @@
+header {
+  background: $dark-blue;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1.3em;
+  @include breakpoint((to: 1244px)) {
+    .header-row-logo-text {
+      font-size: 22px;
+    }
+  }
+  @include breakpoint((to: 992px)) {
+    .city-region {
+      display: none;
+    }
+  }
+  @include breakpoint((to: 767px)) {
+    .header-row-logo {
+      text-align: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      margin-bottom: 20px;
+    }
+  }
+}
+.bg-page-bottom .container{
+  padding-left: 0;
+  padding-right: 0;
+  background: #fff;
+  box-shadow: 5px 5px 50px rgba(11,21,32,0.2),-5px -5px 50px rgba(11,21,32,0.2);
+}
+.header-row {
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.bg-page-bottom {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @include breakpoint((to: 992px)) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+.header-row-logo-text {
+  font-size: 26.5px;
+  line-height: 33px;
+  letter-spacing: -0.01em;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  padding-bottom: 24px;
+  font-weight: 300;
+}
+.header-row-logo {
+  padding: 0;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.pad-0 {
+  padding: 0 !important;
+}
+.header-row-region {
+  padding-left: 4%;
+  padding-right: 0;
+  @include breakpoint((to: 767px)) {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+}
+.header-row-region-city_block {
+  float: left;
+  position: relative;
+  span {
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+  }
+  .city-change {
+    font-size: 14px;
+    color: #9a9a9a;
+    white-space: nowrap;
+  }
+  @include breakpoint((to: 992px)) {
+    span {
+      font-size: 12px;
+    }
+  }
+}
+.city {
+  color: $green;
+  border-bottom: 1px dashed rgba(152,193,59, 0.6);
+  transition: all 0.15s linear;
+  &:hover {
+    border-bottom-color: transparent;
+  }
+}
+.city-region {
+  width: 115px;
+  display: block;
+  float: left;
+  position: relative;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 15px;
+  padding-top: 2px;
+  color: rgba(255,255,255,0.7);
+}
+
+.header-row-phone {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: right;
+  white-space: nowrap;
+  a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: .025em;
+  }
+  span {
+    font-size: 14px;
+    color: #9a9a9a;
+    display: block;
+    line-height: 14px;
+  }
+  @include breakpoint((to: 992px)) {
+    span {
+      display: none;
+    }
+    a {
+      font-size: 17px;
+    }
+  }
+  @include breakpoint((to: 350px)) {
+    a {
+      font-size: 12px;
+    }
+  }
+}
+.phone-free {
+  margin-left: 30px;
+  @include breakpoint((to: 992px)) {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+}
+.phone-city {
+  margin-left: -35px;
+  @include breakpoint((to: 992px)) {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  @include breakpoint((to: 350px)) {
+    margin-bottom: 1px;
+  }
+}
+
+.search-block {
+  margin-top: 17px;
+  @include breakpoint((to: 992px)) {
+    margin-top: 0;
+  }
+}
+.search-form {
+  width: 100%;
+  display: table-row;
+  position: relative;
+}
+.search-input-block {
+  display: table-cell;
+  width: 100%;
+  input[type=text] {
+    height: 40px;
+    padding-left: 16px;
+    border-color: #3b4e60;
+    background-color: #3b4e60;
+    display: inline-block;
+    color: #ffffff;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+.btn-search-block {
+  display: table-cell;
+  button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: $dark-green;
+    padding: 9px 19px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .05em;
+    border: 1px solid $dark-green;
+    margin-top: -1px;
+  }
+}
+
+.user-block {
+  text-align: center;
+  a {
+    font-size: 14px;
+    letter-spacing: .05em;
+    color: #fff;
+    line-height: 21px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    padding-right: 0;
+    margin-bottom: -1px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @include breakpoint((to: 992px)) {
+    display: none;
+  }
+}
+.menu-right-span {
+  display: block;
+  margin: 0 auto 7px;
+  background: url(../images/spritesheet.png) 0 0 no-repeat;
+}
+.menu-right-span__login {
+  background-position: -40px -75px;
+  width: 32px;
+  height: 32px;
+}
+
+.header-points {
+  padding-top: 24px;
+  padding-bottom: 26px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  position: relative;
+  @include breakpoint((to: 767px)) {
+    display: none;
+  }
+}
+.phone-span {
+  font-size: 13px;
+  color: #9a9a9a;
+  display: block;
+  line-height: 14px;
+}
+.adress-list {
+  li {
+    @include inline-block(top);
+    margin-left: 40px;
+    position: relative;
+    a {
+      text-decoration: none;
+    }
+  }
+  @include breakpoint((to: 992px)) {
+    li {
+      margin-left: 0px;
+      .caret {
+        display: none;
+      }
+    }
+  }
+}
+.address-icon {
+  width: 18px;
+  height: 24px;
+  background: url(../images/spritesheet.png) no-repeat -19px 0;
+  display: block;
+  float: left;
+  margin-right: 12px;
+}
+.caret {
+  border-top: 4px solid #9fa8b1;
+  position: absolute;
+  right: -15px;
+  bottom: 10px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.popupdrop {
+  position: absolute;
+  display: none;
+  padding-top: 20px;
+  width: 270px;
+  right: -12px;
+  &:before {
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #f5f5f5;
+    top: 10px;
+    content: '';
+    position: absolute;
+    right: 15px;
+  }
+  span {
+    display: block;
+    font-size: 14px
+  }
+  .popup-wrap {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(31,29,30,.29);
+  }
+  .popup-title {
+    color: #161b21;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+}
+.icon-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  &:before {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -196px -42px;
+    width: 16px;
+    height: 16px;
+  }
+}
+

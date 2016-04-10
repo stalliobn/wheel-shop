@@ -1,0 +1,58 @@
+.akcii-list .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.akcii_item {
+  border-top: 2px solid #98c13b;
+  padding-top: 35px;
+  margin-top: 25px;
+  min-height: 435px;
+  line-height: 22px;
+}
+.akcii_pict {
+  display: block;
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.akcii_lcol {
+  width: 54.30743243243243%;
+  padding-right: 20px;
+  @include breakpoint((to: 992px)) {
+    width: 100%;
+  }
+}
+.akcii_rcol {
+  width: 45.35472972972973%;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  @include breakpoint((to: 992px)) {
+    width: 100%;
+  }
+}
+.akcii_text {
+  font-size: 14px;
+}
+.akcii_title {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  a {
+    font-size: 26px;
+    color: #0c141c;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @include breakpoint((to: 760px)) {
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+

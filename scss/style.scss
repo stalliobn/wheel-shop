@@ -1,0 +1,54 @@
+@import 'variables', 'mixins', 'normalize', 'parts/bootstrap';
+@import 'parts/header', 'parts/menu', 'parts/selectik', 'parts/select-box',
+'parts/owl-carousel', 'parts/popular', 'parts/tabs-box', 'parts/footer',
+'parts/category', 'parts/action', 'parts/news', 'parts/contacts',
+'parts/carts', 'parts/text-page', 'parts/bascet';
+html {
+  &:before {
+    content: "#{inspect($breakpoints)}";
+    display: none;
+  }
+}
+.clearfix {
+  @each $pseudo in after before {
+    &:#{$pseudo} {
+      content: '';
+      display: table;
+    }
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+.wrapper {
+  margin: auto;
+}
+a,
+a:visited,
+a:link,
+a:hover {
+  outline: none;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+body {
+  font-family: Arial;
+  font-size: 16px;
+}
+.layer {
+  h1 {
+    @include breakpoint((to: 992px)) {
+      font-size: 25px;
+    }
+    @include breakpoint((to: 768px)) {
+      font-size: 18px;
+    }
+  }
+}

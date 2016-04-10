@@ -1,0 +1,119 @@
+.news_item {
+  border-top: 2px solid #98c13b;
+  margin-bottom: 100px;
+  @include breakpoint((to: 992px)) {
+    margin-bottom: 50px;
+  }
+}
+
+.news_date {
+  background-color: #98c13b;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+  width: 86px;
+  float: left;
+  span {
+    display: block;
+  }
+  @include breakpoint((to: 768px)) {
+    line-height: 21px;
+    font-size: 12px;
+  }
+}
+.news_item_header_title {
+  margin: 0;
+  padding-left: 30px;
+  overflow: hidden;
+  display: table;
+  min-height: 120px;
+  @include breakpoint((to: 768px)) {
+    padding-left: 10px;
+    min-height: 96px;
+  }
+}
+.news_title {
+  font-size: 22px;
+  margin: 0;
+  line-height: 28px;
+  min-height: 120px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #0c141c;
+  text-decoration: none;
+  &:hover {
+    color: #23527c;
+    text-decoration: underline;
+  }
+  @include breakpoint((to: 768px)) {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  @include breakpoint((to: 400px)) {
+    font-size: 11px;
+  }
+}
+.news_pict {
+  max-height: 300px;
+  margin-left: 100px;
+  @include breakpoint((to: 768px)) {
+    margin: auto;
+  }
+}
+.news_pict img {
+  max-height: 300px;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  @include breakpoint((to: 768px)) {
+    margin: auto;
+  }
+}
+.news_preview {
+  line-height: 20px;
+  position: relative;
+  margin-bottom: 60px;
+  @include breakpoint((to: 768px)) {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+}
+.news_readmore {
+  float: right;
+  margin-top: -45px;
+  margin-right: 8.33333333%;
+  @include breakpoint((to: 768px)) {
+    float: none;
+    width: 100%;
+    margin: 0;
+    .btn-news {
+      width: 100%;
+    }
+  }
+}
+.btn-news {
+  background-color: transparent;
+  color: #6a9c1d;
+  border: 2px solid #6a9c1d;
+  text-transform: uppercase;
+  min-width: 194px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: .5s;
+  &:hover {
+    color: #fff;
+    background: #6a9c1d;
+  }
+}
