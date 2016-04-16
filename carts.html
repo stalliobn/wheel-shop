@@ -7,6 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+            <i class="icon icon__close" aria-hidden="true"></i>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="bg-page-bottom">
     <div class="container">
       <header>
@@ -615,23 +635,23 @@
         <h1 class="pad-0-30 ">ДИСК LEGEARTIS REPLICA FT18 6X15/5X118 ET68 D71.1 S В РОСТОВЕ-НА-ДОНУ</h1>
         <div class="guarantees pad-0-30 row hidden-sm hidden-xs">
           <div class="guarantees_facts guarantees_facts__horizontal clearfix panel-group">
-            <div class="fact panel">
+            <div class="fact panel" data-toggle="modal" data-target="#myModal">
               <i class="guarantees_icon icon icon__box2"></i>
               <span class="fact_text">товар 100% <br> в наличии</span>
             </div>
-            <div class="fact panel">
+            <div class="fact panel" data-toggle="modal" data-target="#myModal">
               <i class="guarantees_icon icon icon__wallet"></i>
               <span class="fact_text">без <br>предоплаты</span>
             </div>
-            <div class="fact panel">
+            <div class="fact panel" data-toggle="modal" data-target="#myModal">
               <i class="guarantees_icon icon icon__time2"></i>
               <span class="fact_text">доставка <br>точно в срок</span>
             </div>
-            <div class="fact panel">
+            <div class="fact panel" data-toggle="modal" data-target="#myModal">
               <i class="guarantees_icon icon icon__guarante2"></i>
               <span class="fact_text">гарантия <br>качества</span>
             </div>
-            <div class="fact panel">
+            <div class="fact panel" data-toggle="modal" data-target="#myModal">
               <i class="guarantees_icon icon icon__callback2"></i>
               <span class="fact_text">мы всегда <br>перезваниваем</span>
             </div>
@@ -644,7 +664,7 @@
                 Код товара: <strong>9159254</strong>
               </div>
               <div class="store-amout">На складе 23 шт.</div>
-              <a href="#" class="link-popup">Наличие по складам</a>
+              <a href="" class="link-popup" data-toggle="modal" data-target="#myModal">Наличие по складам</a>
             </div>
             <div class="product">
               <div class="gen-info-bottom">
@@ -674,7 +694,7 @@
               </div>
             </div>
             <div class="col-xs-4 pad-0 product_action-btns">
-              <a href="" id="catalog_add2cart_link_51122808" class="btn btn-detail-add btn-detail-add__cart">
+              <a href="" id="catalog_add2cart_link_51122808" class="btn btn-detail-add btn-detail-add__cart" data-toggle="modal" data-target="#myModal">
                 <span class="btn-detail-add-bg btn-detail-add-bg__cart"></span>
                 <span class="btn-detail-add-text btn-detail-add-text__cart">Купить</span>
               </a>
@@ -1133,11 +1153,49 @@
       </footer>
     </div>
   </div>
+  <div class="list-group menu-right">
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__login"></span>
+      <span class="menu-right-item_name">Войти</span>
+    </a>
+
+
+    <span class="list-group-item menu-right-a__basket">
+      <span class="menu-right-span menu-right-span__basket"></span>
+      <span class="menu-right-item_name">Корзина</span>
+    </span>
+
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__pay"></span>
+      <span class="menu-right-item_name">Оплата</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__delivery"></span>
+      <span class="menu-right-item_name">Доставка</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__order"></span>
+      <span class="menu-right-item_name">ЧаВо</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__about"></span>
+      <span class="menu-right-item_name">О компании</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__partners"></span>
+      <span class="menu-right-item_name">Партнерам</span>
+    </a>
+    <a href="" class="list-group-item" title="Полезное">
+      <span class="menu-right-span menu-right-span__info"></span>
+      <span class="menu-right-item_name">Полезное</span>
+    </a>
+  </div>
 <script src="js/jquery.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKHg5gR8UiAxb6NYF0YP6Fr-XBNLtZc6w"></script>
 <script src="js/jquery.fs.selecter.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/tab.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/script.js"></script>
 <script>
   function initialize() {

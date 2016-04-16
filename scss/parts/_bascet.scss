@@ -420,6 +420,72 @@
     }
   }
 }
+//промокод
+.fill-box {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+.cart-footer {
+  margin-bottom: 40px;
+}
+#promo-code {
+  height: 34px;
+}
+.btn-success {
+  background-color: #6a9c1d;
+  border-color: #6a9c1d;
+  outline-offset: 0;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  transition: .5s;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  &:hover {
+    opacity: .7;
+  }
+  @include breakpoint((to: 768px)) {
+    margin-top: 10px;
+  }
+}
+.input_text {
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 1.72em;
+  color: #303030;
+  border: 1px solid #ddd;
+}
+
+.table_itogo_new {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 30px;
+  color: #303030;
+}
+.table_allprice {
+  font-size: 28px;
+  line-height: 37px;
+  color: #173b63;
+}
+@media (min-width: 768px) {
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+}
+
+
+
 
 
 @media (max-width: 991px) and (min-width: 768px) {

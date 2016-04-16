@@ -7,6 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+            <i class="icon icon__close" aria-hidden="true"></i>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="bg-page-bottom">
     <div class="container">
       <header>
@@ -637,7 +657,10 @@
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td><b>ул. Механизаторов, дом 8</b></td>
+                  <td>
+                    <b>ул. Механизаторов, дом 8</b><br />
+                    <a href="" data-toggle="modal" data-target="#myModal">фото магазина</a>
+                  </td>
                   <td>
                     <span>8-800-555-45-85 +7</span>
                     <span>(863) 201 10 10</span>
@@ -653,7 +676,10 @@
                 </tr>
                 <tr>
                   <td>1</td>
-                  <td><b> ул. Доватора, дом 148</b></td>
+                  <td>
+                    <b> ул. Доватора, дом 148</b><br />
+                    <a href="" data-toggle="modal" data-target="#myModal">фото магазина</a>
+                  </td>
                   <td>
                     <span>8-800-555-45-85 +7</span>
                     <span>(863) 201 10 10</span>
@@ -773,11 +799,49 @@
       </footer>
     </div>
   </div>
+  <div class="list-group menu-right">
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__login"></span>
+      <span class="menu-right-item_name">Войти</span>
+    </a>
+
+
+    <span class="list-group-item menu-right-a__basket">
+      <span class="menu-right-span menu-right-span__basket"></span>
+      <span class="menu-right-item_name">Корзина</span>
+    </span>
+
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__pay"></span>
+      <span class="menu-right-item_name">Оплата</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__delivery"></span>
+      <span class="menu-right-item_name">Доставка</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__order"></span>
+      <span class="menu-right-item_name">ЧаВо</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__about"></span>
+      <span class="menu-right-item_name">О компании</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__partners"></span>
+      <span class="menu-right-item_name">Партнерам</span>
+    </a>
+    <a href="" class="list-group-item" title="Полезное">
+      <span class="menu-right-span menu-right-span__info"></span>
+      <span class="menu-right-item_name">Полезное</span>
+    </a>
+  </div>
 <script src="js/jquery.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKHg5gR8UiAxb6NYF0YP6Fr-XBNLtZc6w"></script>
 <script src="js/jquery.fs.selecter.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/tab.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/script.js"></script>
 
 <script>

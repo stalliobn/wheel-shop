@@ -1,0 +1,218 @@
+@media only screen and (min-width: 1200px) {
+  .sale-order_lcol {
+    padding-left: 35px;
+    padding-right: 30px;
+  }
+
+  .sale-order_lcol .form_label, .sale-order_rcol .form_label {
+    white-space: nowrap;
+  }
+}
+.order-checkout .form-group {
+  margin-bottom: 50px;
+}
+.form_label {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #606060;
+}
+.asterisk:before {
+  content: '*';
+  color: #bf2327;
+  position: absolute;
+  left: 0px;
+}
+.button-submit {
+  background-color: #6a9c1d;
+  border-color: #6a9c1d;
+  outline: 0;
+  outline-offset: 0;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  user-select: none;
+}
+.asterisk {
+  font-style: italic;
+  font-family: Georgia,"GeorgiaItalic", Times, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #606060;
+  position: relative;
+  padding-left: 10px;
+}
+.input-lg {
+  height: 40px;
+}
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-transition: none;
+  transition: none;
+  border-color: #c2c2c2;
+}
+.form-group {
+  .selecter {
+    height: 38px;
+  }
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.text-box .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.checkbox--middle {
+  display: table;
+  margin-top: 15px;
+}
+.checkbox--middle .checkbox__box {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox__control {
+  opacity: 0;
+}
+.checkbox--middle .checkbox__box, .checkbox--middle .checkbox__label {
+  display: table-cell;
+  vertical-align: middle;
+}
+span.checkbox__label {
+  padding-left: 10px;
+}
+.checkbox--middle .checkbox__box:after, .checkbox--middle .checkbox__box:before {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  content: '';
+  top: 50%;
+  margin-top: -10px;
+  left: 0;
+}
+.totle-form {
+  margin-bottom: 20px;
+}
+.checkbox__box:after, .checkbox__box:before {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  content: '';
+}
+.checkbox__box:after {
+  top: 1px;
+  left: 1px;
+  padding: 0;
+
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+}
+.checkbox--middle .checkbox_checked_yes .checkbox__tick {
+  top: -8px;
+  left: 2px;
+}
+.checkbox_checked_yes .checkbox__tick {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  top: 1px;
+  left: 3px;
+}
+.checkbox__tick {
+  bottom: 8px;
+  left: 2px;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  visibility: hidden;
+  padding: 0;
+  vertical-align: baseline;
+  opacity: 0;
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/check.png);
+}
+.radio label, .checkbox label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+textarea.form-control {
+  height: auto;
+}
+@media only screen and (min-width: 992px) {
+  .sale-order_lcol .col-sm-6, .sale-order_rcol .col-sm-6, .sale-order_lcol .col-md-6, .sale-order_rcol .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .sale-order_lcol .row, .sale-order_rcol .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .sale-order_rcol {
+    padding-left: 30px;
+    padding-right: 35px;
+  }
+}
+.selectmenu.selectmenu-inline {
+  float: none;
+  margin-right: 0;
+  border: 1px solid #c2c2c2;
+  .selecter {
+    margin: 0;
+  }
+}
+
+
+.opl-wrap {
+  max-width: 430px;
+  margin: auto;
+  input {
+    margin-top: 30px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}

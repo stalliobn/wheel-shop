@@ -1,0 +1,126 @@
+.menu-right {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  height: 100%;
+  background-color: #0f263d;
+  text-align: center;
+}
+.list-group {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.list-group-item {
+  font-family: 'LatoLight', sans-serif;
+  font-size: 14px;
+  letter-spacing: .05em;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.menu-right-span {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  background: url(../images/spritesheet.png) 0 0 no-repeat;
+}
+.menu-right-span__basket {
+  background-position: -91px 0;
+  width: 32px;
+  height: 32px;
+}
+.menu-right-span__login {
+  background-position: -40px -75px;
+  width: 32px;
+  height: 32px;
+}
+.menu-right-span__pay {
+  background-position: -142px -75px;
+  width: 32px;
+  height: 22px;
+}
+.menu-right-a__basket, .list-group-item.menu-right-a__basket:focus {
+  background-color: #6a9c1d;
+  padding-bottom: 25px;
+  margin-top: 15px;
+}
+.menu-right-span__delivery {
+  background-position: -74px -75px;
+  width: 32px;
+  height: 25px;
+}
+.menu-right-span__order {
+  background-position: -176px -75px;
+  width: 32px;
+  height: 32px;
+}
+.menu-right-span__about {
+  background-position: -182px 0;
+  width: 32px;
+  height: 32px;
+}
+.menu-right-span__partners {
+  background-position: -108px -75px;
+  width: 32px;
+  height: 29px;
+}
+.menu-right-span__info {
+  background-position: -210px -75px;
+  width: 24px;
+  height: 32px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .menu-right .list-group-item {
+    padding: 10px;
+    margin-top: 12px;
+  }
+  .menu-right-item_name {
+    display: none;
+  }
+  .menu-right {
+    width: 60px;
+  }
+  .menu-right-span {
+    margin-top: 0;
+  }
+}
+
+//перенести в файл с сеткой. Отредактировать структуру сетки
+@media only screen and (min-width: 992px) {
+  .menu-right {
+    display: block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: auto;
+    margin: 0 80px 0 0;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1244px;
+    margin: 0;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 1144px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin: 0 140px 0 0;
+  }
+}
+@media (min-width: 1500px) {
+  .container {
+    margin: 0 auto;
+    width: 1244px;
+  }
+}

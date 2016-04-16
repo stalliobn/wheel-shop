@@ -2,7 +2,8 @@
 @import 'parts/header', 'parts/menu', 'parts/selectik', 'parts/select-box',
 'parts/owl-carousel', 'parts/popular', 'parts/tabs-box', 'parts/footer',
 'parts/category', 'parts/action', 'parts/news', 'parts/contacts',
-'parts/carts', 'parts/text-page', 'parts/bascet';
+'parts/carts', 'parts/text-page', 'parts/bascet', 'parts/right-panel',
+'parts/personal-data', 'parts/modal';
 html {
   &:before {
     content: "#{inspect($breakpoints)}";
@@ -24,6 +25,9 @@ html {
 .wrapper {
   margin: auto;
 }
+img {
+  max-width: 100%;
+}
 a,
 a:visited,
 a:link,
@@ -39,9 +43,12 @@ h1, .h1, h2, .h2, h3, .h3 {
   margin-bottom: 10px;
 }
 body {
-  font-family: Arial;
+  font-family: 'Lato';
   font-size: 16px;
+  // line-height: 1.72em;
+  color: #303030;
 }
+
 .layer {
   h1 {
     @include breakpoint((to: 992px)) {
@@ -52,3 +59,16 @@ body {
     }
   }
 }
+h1, .h1 {
+  font-size: 30px;
+  font-family: 'LatoBlack',sans-serif;
+  color: #0c141c;
+  text-transform: uppercase;
+}
+@include font-face(lato, LatoRegular);
+// @include font-face(lato, LatoBold);
+// @include font-face(lato, LatoBoldItalic);
+// @include font-face(lato, LatoItalic);
+// @include font-face(lato, LatoLight);
+
+

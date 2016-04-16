@@ -7,6 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+            <i class="icon icon__close" aria-hidden="true"></i>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="bg-page-bottom">
     <div class="container">
       <header>
@@ -39,9 +59,9 @@
             </div>
             <div class="row">
               <div class="col-md-8 col-xs-12 pad-0 search-block">
-                <form class="search-form" role="search" action="">
+                <form class="search-form" role="search">
                   <div class="search-input-block">
-                    <input type="text" class="search-input form-control" name="" value="" autocomplete="off" placeholder="Например, ">
+                    <input type="text" class="search-input form-control" value="" autocomplete="off" placeholder="Например, ">
                   </div>
                   <div class="btn-search-block">
                     <button class="btn btn-search" type="submit">Поиск</button>
@@ -52,7 +72,7 @@
                 <div class="row">
                   <div class="col-sm-6 col-sm-offset-1 pad-0"></div>
                   <div class="col-md-5 pad-0 ">
-                    <a href="" title="Войти">
+                    <a href="" data-toggle="modal" data-target="#myModal">
                       <span class="menu-right-span menu-right-span__login"></span>
                       <span class="menu-right-item_name">Войти</span>
                     </a>
@@ -1236,9 +1256,48 @@
       </footer>
     </div>
   </div>
+
+  <div class="list-group menu-right">
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__login"></span>
+      <span class="menu-right-item_name">Войти</span>
+    </a>
+
+
+    <span class="list-group-item menu-right-a__basket">
+      <span class="menu-right-span menu-right-span__basket"></span>
+      <span class="menu-right-item_name">Корзина</span>
+    </span>
+
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__pay"></span>
+      <span class="menu-right-item_name">Оплата</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__delivery"></span>
+      <span class="menu-right-item_name">Доставка</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__order"></span>
+      <span class="menu-right-item_name">ЧаВо</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__about"></span>
+      <span class="menu-right-item_name">О компании</span>
+    </a>
+    <a href="" class="list-group-item">
+      <span class="menu-right-span menu-right-span__partners"></span>
+      <span class="menu-right-item_name">Партнерам</span>
+    </a>
+    <a href="" class="list-group-item" title="Полезное">
+      <span class="menu-right-span menu-right-span__info"></span>
+      <span class="menu-right-item_name">Полезное</span>
+    </a>
+  </div>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.fs.selecter.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -19,6 +19,9 @@
   background-color: rgba(255,255,255,0.5);
   padding: 0 6px 6px 0;
 }
+.panel {
+  cursor: pointer;
+}
 .article_detail {
   color: #e00b0e;
   font-size: 18px;
@@ -599,3 +602,20 @@
     margin: auto;
   }
 }
+.navbar-default.navbar-description .navbar-nav {
+  margin: 20px 0 0 20px;
+  text-transform: none;
+}
+@media only screen and (max-width: 767px) {
+  .navbar-default.navbar-description .nav.nav-tabs.navbar-nav li, .navbar-default.navbar-description .nav.nav-tabs.navbar-nav li a {
+    float: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .navbar-default.navbar-description .nav.nav-tabs.navbar-nav {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+
