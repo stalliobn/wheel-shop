@@ -59,6 +59,34 @@ body {
     }
   }
 }
+.button-gray {
+  background-color: #ddd;
+  border-color: #ddd;
+  transition: .15s;
+  outline: 0;
+  outline-offset: 0;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  user-select: none;
+  color: #000;
+  &:hover {
+    background-color: #88be35;
+    border-color: #88be35;
+    color: #fff;
+  }
+}
 h1, .h1 {
   font-size: 30px;
   font-family: 'LatoBlack',sans-serif;
